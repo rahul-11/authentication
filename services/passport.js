@@ -27,7 +27,7 @@ const localLogin = new LocalStrategy(localOptions, async (email, password, done)
 
   }
   catch(err){
-
+    done(err);
   }
 })
 
